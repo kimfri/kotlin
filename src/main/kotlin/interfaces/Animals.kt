@@ -12,7 +12,6 @@ class FastMover: CanRun {
     override fun run(): String {
         return "Fast"
     }
-
 }
 
 class Dog: CanEat, CanRun by FastMover() {
