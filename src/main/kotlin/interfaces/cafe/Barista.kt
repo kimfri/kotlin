@@ -1,6 +1,6 @@
 package interfaces.cafe
 
-class Barista(val name: String) : OnCoffeeBrewedListener {
+class Barista(private val name: String) : OnCoffeeBrewedListener {
     private val coffeeMaker = CoffeeMaker()
 
     fun acceptOrder(type: CoffeeType) {
