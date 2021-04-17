@@ -10,5 +10,6 @@ class CoffeeMaker {
             delay(type.brewtime) // non-blocking delay for 1 second (default time unit is ms)
             callback.onCoffeeBrewed(madeCoffee)
         }
+        println("Coffee($type) has been ordered, and is now being prepared")
     }
 }
